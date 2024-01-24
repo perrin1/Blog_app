@@ -5,6 +5,7 @@ const connectDB = require('./server/config/db');
 const dotenv = require('dotenv').config();
 const session = require('express-session');
 const passport = require('passport');
+const methodOverride = require("method-override");
 const MongoStore = require('connect-mongo');
 
 const app = express();
@@ -33,7 +34,7 @@ app.use(session({
 // passort authentification
 app.use(passport.initialize()); 
 app.use(passport.session());
-
+app.use(methodOverride("_method"));
 
 // static file
 app.use(express.static('public'));

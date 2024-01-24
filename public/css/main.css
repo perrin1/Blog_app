@@ -1,5 +1,6 @@
 :root {
-    --background-color: #abc7cc;
+   
+    --background-color: #ffffff;
     /* --background-color: #FFC700; */
     --bs-primary-rgb: #12296c;
   }
@@ -75,7 +76,7 @@
 @media (min-width: 1200px) {
     .home {
       background: 
-        url('../img/human-1.svg') left bottom no-repeat,
+        url('../img/tes.jpg') left bottom no-repeat,
         url('../img/human-2.svg') right bottom no-repeat,
         url('../img/noise-bg.svg') left top repeat,
         var(--background-color);
